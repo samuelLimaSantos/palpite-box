@@ -1,9 +1,6 @@
 import { GoogleSpreadsheet } from "google-spreadsheet";
-import credentials from "../../creditials.json";
 
-const doc = new GoogleSpreadsheet(
-  "1q1_LXvhEEsjjWg1zVxzD3CM1WZ2R9LN_4DKLU2mln7E"
-);
+const doc = new GoogleSpreadsheet(process.env.SHEET_DOC_ID);
 
 export default async (request, response) => {
   try {
