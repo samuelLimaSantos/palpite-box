@@ -1,22 +1,22 @@
 import React from "react";
 import Link from "next/link";
-
+import PageTitle from "../components/PageTitle";
 
 const Sobre = () => {
-    return (
+  return (
     <div>
-        <h1>Sobre</h1>
-        <div>
-        <Link href = "/index">
-            <a>Home</a>
+      <PageTitle title="Sobre" />
+      <h1>Sobre</h1>
+      <div>
+        <Link href="/index">
+          <a>Home</a>
         </Link>
-        <Link href = "/contato">
-            <a>Contato</a>
+        <Link href="/contato">
+          <a>Contato</a>
         </Link>
-        </div>
+      </div>
     </div>
-    
-    )
+  );
 };
 
 export default Sobre;
